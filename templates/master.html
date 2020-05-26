@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form action="{{ url_for('index') }}" method="post">
+      <input type="text" name="date" placeholder="Enter date">
+      <input type="text" name="name" placeholder="Enter name">
+      <input type="text" name="topic" placeholder="Enter topic">
+      <button>submit</button>
+  <form>
+  	<a href="{{ url_for('index') }}">Submit and go back</a>
+{% endblock %}
